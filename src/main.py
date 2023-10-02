@@ -6,9 +6,9 @@ import matplotlib.patches as pat
 file_path = os.path.join(os.path.dirname(
     __file__), "../resource/models/french_bulldog.obj")
 txt_file_path = os.path.join(os.path.dirname(
-    __file__), "../resource/models/dog.obj")
+    __file__), "../resource/models/doggo.obj")
 txt_middle_file_path = os.path.join(os.path.dirname(
-    __file__), "../resource/models/dog_face.txt")
+    __file__), "../resource/models/doggo_face.txt")
 ZCoordinate_list = []
 vertices = []
 m_count = 0
@@ -64,8 +64,8 @@ for i in range(len(ZCoordinate_list)):
     figs.append(plt.figure(figsize=(5, 5)))
     print(i)
     axes.append(figs[i].add_subplot(1, 1, 1))
-    axes[i].set_xlim([-0.1, 0.1])
-    axes[i].set_ylim([-0.1, 0.1])
+    axes[i].set_xlim([-2.1, 2.1])
+    axes[i].set_ylim([-2.1, 2.1])
     rec_count = 0
 
     with open(txt_middle_file_path) as tf:
